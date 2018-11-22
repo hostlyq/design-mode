@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.builderInit;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
