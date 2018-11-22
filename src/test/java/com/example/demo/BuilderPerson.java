@@ -70,13 +70,13 @@ public class BuilderPerson {
             return this;
         }
 
-        public com.example.demo.entity.BuilderPerson build() {
-            return new com.example.demo.entity.BuilderPerson(this);
+        public BuilderPerson build() {
+            return new BuilderPerson(this);
         }
     }
 
     public static void main(String[] args) {
-        com.example.demo.entity.BuilderPerson person = new com.example.demo.entity.BuilderPerson.Builder(1, "张三")
+        BuilderPerson person = new BuilderPerson.Builder(1, "张三")
                 .age(18).sex("男").desc("测试使用builder模式").build();
         System.out.println(JSONObject.toJSONString(person));
     }
