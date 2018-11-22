@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.builder.change;
 
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.Data;
  * @author liyq on 2018/11/21
  */
 @Data
-public class BuilderPerson {
+public class Person {
 
     //必要参数
     private int id;
@@ -19,7 +19,7 @@ public class BuilderPerson {
     private String address;
     private String desc;
 
-    private BuilderPerson(Builder builder) {
+    private Person(Builder builder) {
         this.id = builder.id;
         this.name = builder.name;
         this.age = builder.age;
@@ -70,13 +70,13 @@ public class BuilderPerson {
             return this;
         }
 
-        public BuilderPerson build() {
-            return new BuilderPerson(this);
+        public Person build() {
+            return new Person(this);
         }
     }
 
     public static void main(String[] args) {
-        BuilderPerson person = new BuilderPerson.Builder(1, "张三")
+        Person person = new Person.Builder(1, "张三")
                 .age(18).sex("男").desc("测试使用builder模式").build();
         System.out.println(JSONObject.toJSONString(person));
     }
