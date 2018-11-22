@@ -1,5 +1,5 @@
 # design-mode
-建造者模式builder
+builder
 
 ## 项目类图
 ![项目类图](https://github.com/qiaojiuyuan/BuilderPattern/raw/master/class_pic1.png)
