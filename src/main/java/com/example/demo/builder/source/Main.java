@@ -5,9 +5,6 @@ import com.example.demo.builder.source.entity.ConcreteBuilder1;
 import com.example.demo.builder.source.entity.ConcreteBuilder2;
 import com.example.demo.builder.source.entity.Product;
 
-/**
- * Created by daidaijie on 2016/1/26.
- */
 public class Main {
     public static void main(String[] args) {
         Director director = new Director();

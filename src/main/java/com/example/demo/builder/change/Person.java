@@ -1,6 +1,5 @@
 package com.example.demo.builder.change;
 
-import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 
 /**
@@ -73,12 +72,6 @@ public class Person {
         public Person build() {
             return new Person(this);
         }
-    }
-
-    public static void main(String[] args) {
-        Person person = new Person.Builder(1, "张三")
-                .age(18).sex("男").desc("测试使用builder模式").build();
-        System.out.println(JSONObject.toJSONString(person));
     }
 
 }
